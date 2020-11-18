@@ -50,19 +50,19 @@ export const AppRouter = () => {
 
                     <PrivateRoute 
                             
-                            path="https://bengyy.github.io/react-spring/nac" 
+                            path="/nac" 
                             component={ RegEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
                             
-                            path="https://bengyy.github.io/react-spring/empleado" 
+                            path="/empleado" 
                             component={ EmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
                             
-                            path="https://bengyy.github.io/react-spring/dtoemp" 
+                            path="/dtoemp" 
                             component={ DatosEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
