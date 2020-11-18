@@ -15,17 +15,17 @@ export const NavbarScreen = () => {
                 { name }
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/">
+                <a className="navbar-brand" href="/">
                     <i className="fas fa-home"></i></a>
             </span>
             <span className="navbar-brand">
-            <a className="navbar-brand" href="https://bengyy.github.io/nac">Nacionalidad</a>
+            <a className="navbar-brand" href="/nac">Nacionalidad</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/empleado">Empleado</a>
+                <a className="navbar-brand" href="/empleado">Empleado</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/dtoemp">Datos Empleado</a>
+                <a className="navbar-brand" href="/dtoemp">Datos Empleado</a>
             </span>
             <button 
                 className="btn btn-outline-danger"
