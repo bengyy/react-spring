@@ -36,7 +36,7 @@ export const AppRouter = () => {
 
                     <PublicRoute 
                             exact 
-                            path="https://bengyy.github.io/react-spring/login" 
+                            path="/login" 
                             component={ LoginScreen }     
                             isAuthenticated={ !!uid }                   
                     />
