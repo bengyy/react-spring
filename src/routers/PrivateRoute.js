@@ -15,7 +15,7 @@ export const PrivateRoute = ({
             component={ (props) => (
                 ( isAuthenticated )
                     ? ( <Component { ...props } /> )
-                    : ( <Redirect to="/react-spring/login" /> )
+                    : ( <Redirect to="https://bengyy.github.io/react-spring/login" /> )
             )}
         
         />

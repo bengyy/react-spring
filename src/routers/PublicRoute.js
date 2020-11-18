@@ -14,7 +14,7 @@ export const PublicRoute = ({
         <Route { ...rest }
             component={ (props) => (
                 ( isAuthenticated )
-                    ? ( <Redirect to="/react-spring/" /> )
+                    ? ( <Redirect to="https://bengyy.github.io/react-spring/" /> )
                     : ( <Component { ...props } /> )
             )}
         
