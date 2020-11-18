@@ -6,11 +6,12 @@ import { HomeScreen } from '../components/home/HomeScreen'
 import { NacionalidadScreen } from '../components/nacionalidad/NacionalidadScreen';
 import { RegEmpleadoScreen } from '../components/nacionalidad/RegEmpleadoScreen'
 import { NavbarScreen } from '../components/ui/NavbarScreen';
+import { Navbar } from '../components/ui/Navbar';
 
 export const HomeRouter = () => {
     return (
         <>
-        <NavbarScreen />
+        <Navbar />
 
         <div className="container mt-2">
             <Switch>

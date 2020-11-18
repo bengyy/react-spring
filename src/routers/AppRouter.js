@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import {
     BrowserRouter as Router,
-    Switch,
-    Redirect
+    Switch
   } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { LoginScreen } from '../components/auth/LoginScreen';
