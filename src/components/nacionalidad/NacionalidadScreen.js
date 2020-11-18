@@ -11,12 +11,7 @@ import { uiOpenModal } from '../../actions/ui';
 export const NacionalidadScreen = () => {
 
     const dispatch = useDispatch();
-    const onDoubleClick = (e) => {
-        // console.log(e);
-        console.log("doble")
-        dispatch( uiOpenModal() );
-    }
-
+  
 
 
     
@@ -42,8 +37,7 @@ export const NacionalidadScreen = () => {
                                     <tr>
                                     <th scope="row">1</th>
                                     <td>Mark</td>
-                                    <td                                     
-                                    onDoubleClickEvent={ onDoubleClick }
+                                    <td                                                                         
                                     ><i   className="far fa-edit azul"></i></td>
                                     <td><i className="fas fa-trash-alt rojo"></i></td>
                                     </tr>                                

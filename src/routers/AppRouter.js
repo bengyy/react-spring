@@ -33,13 +33,13 @@ export const AppRouter = () => {
 
                     <PublicRoute 
                             exact 
-                            path="./login" 
+                            path="/login" 
                             component={ LoginScreen }     
                             isAuthenticated={ !!uid }                   
                     />
 
                     <PrivateRoute                             
-                            path="./" 
+                            path="/" 
                             component={ HomeRouter } 
                             isAuthenticated={ !!uid }
                     />  
