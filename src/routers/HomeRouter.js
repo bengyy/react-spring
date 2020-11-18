@@ -22,7 +22,7 @@ export const HomeRouter = () => {
                 <Route exact path="/ncaion" component={ NacionalidadScreen } />
                 
 
-                <Redirect to="/" />
+                <Redirect to="/home" />
             </Switch>
         </div>
 
