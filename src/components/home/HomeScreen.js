@@ -5,7 +5,7 @@ import './home.css';
 export const HomeScreen = () => {
     return (
         <div>
-            <NavbarScreen />
+            
             <div className="container">
                 <div className="row centrado">
                     <h2>Este proyecto fue desarrollado por Benito José Martínez Osornio. 

@@ -355,7 +355,7 @@ handleChange=async e=>{
     const {form}=this.state;      
   return (
     <div className="App">
-        <NavbarScreen />
+        
     
         <div className="col-4 offset-4">
                   <h1>Empleado</h1>

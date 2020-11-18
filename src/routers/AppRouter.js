@@ -9,10 +9,7 @@ import { LoginScreen } from '../components/auth/LoginScreen';
 import { startChecking } from '../actions/auth';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
-import { RegEmpleadoScreen } from '../components/nacionalidad/RegEmpleadoScreen';
-import { HomeScreen } from '../components/home/HomeScreen';
-import { DatosEmpleadoScreen } from '../components/datosEmpleado/DatosEmpleadoScreen';
-import { EmpleadoScreen } from '../components/empleado/EmpleadoScreen';
+import { HomeRouter } from './HomeRouter';
   
 
 export const AppRouter = () => {
@@ -42,32 +39,12 @@ export const AppRouter = () => {
                     />
 
                     <PrivateRoute 
-                            exact 
-                            path="/nac" 
-                            component={ HomeScreen } 
-                            isAuthenticated={ !!uid }
-                    />  
-
-                    <PrivateRoute 
                             
                             path="/" 
-                            component={ RegEmpleadoScreen } 
+                            component={ HomeRouter } 
                             isAuthenticated={ !!uid }
                     />  
-                    <PrivateRoute 
-                            
-                            path="/empleado" 
-                            component={ EmpleadoScreen } 
-                            isAuthenticated={ !!uid }
-                    />  
-                    <PrivateRoute 
-                            
-                            path="/dtoemp" 
-                            component={ DatosEmpleadoScreen } 
-                            isAuthenticated={ !!uid }
-                    />  
-                    
-                    <Redirect to="/" />   
+                   
                 </Switch>
             </div>
         </Router>

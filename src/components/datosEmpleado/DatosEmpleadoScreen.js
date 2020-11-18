@@ -329,7 +329,7 @@ if(this.state.form.tipoModal !== 'actualizar'){
     const {form}=this.state;
   return (
       <div>
-    <NavbarScreen />
+    
     <div className="col-4 offset-4">
                <h1>Datos Empleado</h1>
               </div>

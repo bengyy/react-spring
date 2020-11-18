@@ -118,8 +118,7 @@ export class RegEmpleadoScreen extends Component{
           render(){
             const {form}=this.state;
           return (
-            <div className="App">
-              <NavbarScreen />
+            <div className="App">              
               <div className="col-4 offset-4">
                <h1>Nacionalidad</h1>
               </div>
