@@ -15,17 +15,17 @@ export const NavbarScreen = () => {
                 { name }
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/react-spring/">
+                <a className="navbar-brand" href="https://bengyy.github.io/">
                     <i className="fas fa-home"></i></a>
             </span>
             <span className="navbar-brand">
-            <a className="navbar-brand" href="https://bengyy.github.io/react-spring/nac">Nacionalidad</a>
+            <a className="navbar-brand" href="https://bengyy.github.io/nac">Nacionalidad</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/react-spring/empleado">Empleado</a>
+                <a className="navbar-brand" href="https://bengyy.github.io/empleado">Empleado</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="https://bengyy.github.io/react-spring/dtoemp">Datos Empleado</a>
+                <a className="navbar-brand" href="https://bengyy.github.io/dtoemp">Datos Empleado</a>
             </span>
             <button 
                 className="btn btn-outline-danger"
