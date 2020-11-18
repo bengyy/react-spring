@@ -14,14 +14,16 @@ export const HomeRouter = () => {
 
         <div className="container mt-2">
             <Switch>
-                <Route exact path="/home" component={ HomeScreen } />
+                <Route exact path="./home" component={ HomeScreen } />
+                <Route exact path="./nac" component={ RegEmpleadoScreen } />
+                <Route exact path="../nac" component={ RegEmpleadoScreen } />
                 <Route exact path="/nac" component={ RegEmpleadoScreen } />
-                <Route exact path="/empleado" component={ EmpleadoScreen } />
-                <Route exact path="/dtoemp" component={ DatosEmpleadoScreen } />
-                <Route exact path="/ncaion" component={ NacionalidadScreen } />
+                <Route exact path="./empleado" component={ EmpleadoScreen } />
+                <Route exact path="./dtoemp" component={ DatosEmpleadoScreen } />
+                <Route exact path="./ncaion" component={ NacionalidadScreen } />
                 
 
-                <Redirect to="/home" />
+                <Redirect to="./nac" />
             </Switch>
         </div>
 

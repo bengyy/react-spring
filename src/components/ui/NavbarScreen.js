@@ -22,6 +22,12 @@ export const NavbarScreen = () => {
             <a className="navbar-brand" href="/nac">Nacionalidad</a>
             </span>
             <span className="navbar-brand">
+            <a className="navbar-brand" href="./nac">Nacionalidad.</a>
+            </span>
+            <span className="navbar-brand">
+            <a className="navbar-brand" href="../nac">Nacionalidad..</a>
+            </span>
+            <span className="navbar-brand">
                 <a className="navbar-brand" href="/empleado">Empleado</a>
             </span>
             <span className="navbar-brand">
