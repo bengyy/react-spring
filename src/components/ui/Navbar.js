@@ -56,13 +56,14 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
-                <button 
-                    className="btn btn-outline-danger"
-                    onClick={ handleLogout }
-                >
-                    <i className="fas fa-sign-out-alt"></i>
-                    <span> Salir</span>
-                </button>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/login"
+                    >
+                        Salir
+                    </NavLink>
                 </ul>
             </div>
         </nav>
