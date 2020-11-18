@@ -43,14 +43,14 @@ export const AppRouter = () => {
 
                     <PrivateRoute 
                             exact 
-                            path="/" 
+                            path="/nac" 
                             component={ HomeScreen } 
                             isAuthenticated={ !!uid }
                     />  
 
                     <PrivateRoute 
                             
-                            path="/nac" 
+                            path="/" 
                             component={ RegEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
