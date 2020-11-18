@@ -50,19 +50,19 @@ export const AppRouter = () => {
 
                     <PrivateRoute 
                             
-                            path="/nac" 
+                            path="/react-spring/nac" 
                             component={ RegEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
                             
-                            path="/empleado" 
+                            path="/react-spring/empleado" 
                             component={ EmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
                             
-                            path="/dtoemp" 
+                            path="/react-spring/dtoemp" 
                             component={ DatosEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
