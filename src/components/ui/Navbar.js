@@ -8,6 +8,9 @@ export const Navbar = () => {
     const { name } = useSelector( state => state.auth );
 
     const handleLogout = () => {
+        console.log('salir');
+        //localStorage.clear();
+        
         dispatch( startLogout() );
     }
     return (
@@ -56,14 +59,14 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/login"
+                    
+                    <button 
+                        className="btn btn-outline-danger"
+                        onClick={ handleLogout }
                     >
-                        Salir
-                    </NavLink>
+                        <i className="fas fa-sign-out-alt"></i>
+                        <span> Salir</span>
+                    </button>
                 </ul>
             </div>
         </nav>
