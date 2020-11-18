@@ -22,8 +22,7 @@ export const NacionalidadScreen = () => {
     
    
     return (
-        <div>
-            <NavbarScreen />
+        <div>            
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 ">

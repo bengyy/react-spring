@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavbarScreen } from '../ui/NavbarScreen';
 import axios from "axios";
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import './regNAcionalida.css';

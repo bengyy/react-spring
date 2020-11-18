@@ -27,6 +27,10 @@ export const NavbarScreen = () => {
             <span className="navbar-brand">
                 <a className="navbar-brand" href="/dtoemp">Datos Empleado</a>
             </span>
+            <span className="navbar-brand">
+                <a className="navbar-brand" href="/ncaion">Datos Empleado</a>
+            </span>
+            
             <button 
                 className="btn btn-outline-danger"
                 onClick={ handleLogout }
