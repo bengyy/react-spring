@@ -9,8 +9,7 @@ export const Navbar = () => {
 
     const handleLogout = () => {
         console.log('salir');
-        //localStorage.clear();
-        
+        //localStorage.clear();        
         dispatch( startLogout() );
     }
     return (
@@ -44,7 +43,7 @@ export const Navbar = () => {
                         exact
                         to="/empleado"
                     >
-                        Empleado
+                        Empleados
                     </NavLink>
                     <NavLink 
                         activeClassName="active"
@@ -52,14 +51,13 @@ export const Navbar = () => {
                         exact
                         to="/empleado"
                     >
-                        Datos Empleado
+                        Datos Empleados
                     </NavLink>
                 </div>
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
-                    
+                <ul className="navbar-nav ml-auto">                    
                     <button 
                         className="btn btn-outline-danger"
                         onClick={ handleLogout }
