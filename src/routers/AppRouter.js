@@ -43,7 +43,7 @@ export const AppRouter = () => {
 
                     <PrivateRoute 
                             exact 
-                            path="https://bengyy.github.io/react-spring/" 
+                            path="/" 
                             component={ HomeScreen } 
                             isAuthenticated={ !!uid }
                     />  
@@ -67,7 +67,7 @@ export const AppRouter = () => {
                             isAuthenticated={ !!uid }
                     />  
                     
-                    <Redirect to="https://bengyy.github.io/react-spring/" />   
+                    <Redirect to="/" />   
                 </Switch>
             </div>
         </Router>
