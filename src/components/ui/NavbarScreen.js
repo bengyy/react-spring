@@ -15,17 +15,17 @@ export const NavbarScreen = () => {
                 { name }
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href="/react-spring/">
                     <i className="fas fa-home"></i></a>
             </span>
             <span className="navbar-brand">
-            <a className="navbar-brand" href="/nac">Nacionalidad</a>
+            <a className="navbar-brand" href="/react-spring/nac">Nacionalidad</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="/empleado">Empleado</a>
+                <a className="navbar-brand" href="/react-spring/empleado">Empleado</a>
             </span>
             <span className="navbar-brand">
-                <a className="navbar-brand" href="/dtoemp">Datos Empleado</a>
+                <a className="navbar-brand" href="/react-spring/dtoemp">Datos Empleado</a>
             </span>
             <button 
                 className="btn btn-outline-danger"

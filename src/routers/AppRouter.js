@@ -36,36 +36,38 @@ export const AppRouter = () => {
 
                     <PublicRoute 
                             exact 
-                            path="/login" 
+                            path="/react-spring/login" 
                             component={ LoginScreen }     
                             isAuthenticated={ !!uid }                   
                     />
 
                     <PrivateRoute 
                             exact 
-                            path="/" 
+                            path="/react-spring/" 
                             component={ HomeScreen } 
                             isAuthenticated={ !!uid }
                     />  
+
                     <PrivateRoute 
-                            exact 
-                            path="/nac" 
+                            
+                            path="/react-spring/nac" 
                             component={ RegEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
-                            exact 
-                            path="/empleado" 
+                            
+                            path="/react-spring/empleado" 
                             component={ EmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
                     <PrivateRoute 
-                            exact 
-                            path="/dtoemp" 
+                            
+                            path="/react-spring/dtoemp" 
                             component={ DatosEmpleadoScreen } 
                             isAuthenticated={ !!uid }
                     />  
-                    <Redirect to="/" />   
+                    
+                    <Redirect to="/react-spring/" />   
                 </Switch>
             </div>
         </Router>
