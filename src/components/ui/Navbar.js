@@ -1,9 +1,20 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { startLogout } from '../../actions/auth';
 
 export const Navbar = () => {
+    const dispatch = useDispatch();
+    const { name } = useSelector( state => state.auth );
+
+    const handleLogout = () => {
+        dispatch( startLogout() );
+    }
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+            <span className="navbar-brand">
+                { name }
+            </span>
             
             <Link 
                 className="navbar-brand" 
@@ -21,7 +32,7 @@ export const Navbar = () => {
                         exact
                         to="/nac"
                     >
-                        Marvel
+                        Nacionalidad
                     </NavLink>
 
                     <NavLink 
@@ -30,7 +41,15 @@ export const Navbar = () => {
                         exact
                         to="/empleado"
                     >
-                        DC
+                        Empleado
+                    </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/empleado"
+                    >
+                        Datos Empleado
                     </NavLink>
                 </div>
             </div>
