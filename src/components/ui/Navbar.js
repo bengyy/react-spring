@@ -49,7 +49,7 @@ export const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/empleado"
+                        to="/dtoemp"
                     >
                         Datos Empleados
                     </NavLink>
