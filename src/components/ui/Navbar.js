@@ -18,7 +18,9 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                <span className="navbar-brand">
+                    { name }
+                </span>
             </Link>
 
             <div className="navbar-collapse">
@@ -54,14 +56,13 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/login"
-                    >
-                        Logout
-                    </NavLink>
+                <button 
+                    className="btn btn-outline-danger"
+                    onClick={ handleLogout }
+                >
+                    <i className="fas fa-sign-out-alt"></i>
+                    <span> Salir</span>
+                </button>
                 </ul>
             </div>
         </nav>
