@@ -31,28 +31,6 @@ export const NavbarScreen = () => {
             <span className="navbar-brand">
                 <a className="navbar-brand" href="/ncaion">Datos Empleado</a>
             </span>
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/nac"
-                    >
-                        Nacionalidad
-                    </NavLink>
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/ncaion"
-                    >
-                        DTO
-                    </NavLink>
-                    
-                </div>
-            </div>
             <button 
                 className="btn btn-outline-danger"
                 onClick={ handleLogout }
